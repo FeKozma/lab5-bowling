@@ -29,5 +29,16 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(10+7+7, s);
 	}
+	
+	@Test
+	void addScoreSpare()
+	{
+		Bowling b = new Bowling();
+		b.addScore(9, 1);
+		b.addScore(5, 2);
+
+		int s = b.getScore();
+		assertEquals(10+5+7, s);
+	}
 
 }
