@@ -9,16 +9,14 @@ public class Bowling {
 		if(strike)
 		{
 			score += first + second;
+			strike = false;
 		}
 		//if this is a strike remember that
 		if(first == 10)
 		{
 			strike = true;
 		}
-		else
-		{
-			strike = false;
-		}
+
 	}
 
 	public int getScore() {
