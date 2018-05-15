@@ -10,5 +10,13 @@ class BowlingTest {
 		b.addScore(2, 2);
 		//fail("Not yet implemented");
 	}
+	
+	@Test
+	void getScore() {
+		Bowling b = new Bowling();
+		b.addScore(4, 1);
+		int s = b.getScore();
+		assertEquals(5, s);
+	}
 
 }
