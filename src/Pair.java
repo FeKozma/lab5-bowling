@@ -10,5 +10,9 @@ public class Pair {
 	public int getX() {
 		return x;
 	}
+	public int getY() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }

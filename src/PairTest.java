@@ -29,5 +29,19 @@ class PairTest {
 			fail("did not get X");
 		}
 	}
+	
+	@Test
+	void GetYTest()
+	{
+		try {
+			Pair P = new Pair(3,6);
+			int y = P.getY();
+			assertEquals(6, y);
+		}catch(Exception e)
+		{
+			fail("did not get Y");
+
+		}
+	}
 
 }
