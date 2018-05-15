@@ -2,7 +2,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class mainTest {
+class BowlingTest {
 
 	@Test
 	void test() {
