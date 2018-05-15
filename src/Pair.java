@@ -7,5 +7,9 @@ public class Pair {
 		this.i = i;	
 		this.j = j;
 }
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 }
