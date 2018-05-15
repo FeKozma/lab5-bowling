@@ -11,7 +11,7 @@ class PairTest {
 		}
 		catch (Exception e)
 		{
-			fail("did not construct Pair")
+			fail("did not construct Pair");
 		}
 		
 	}
