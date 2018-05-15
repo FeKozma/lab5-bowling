@@ -5,8 +5,10 @@ import org.junit.jupiter.api.Test;
 class BowlingTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void addScore() {
+		Bowling b = new Bowling();
+		b.addScore(2, 2);
+		//fail("Not yet implemented");
 	}
 
 }
