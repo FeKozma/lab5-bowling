@@ -50,7 +50,7 @@ class BowlingTest {
 		b.addScore(7, 2);
 
 		int s = b.getScore();
-		assertEquals(27+19, s);
+		assertEquals(27+19+9, s);
 	}
 	
 	@Test
@@ -63,7 +63,7 @@ class BowlingTest {
 		b.addScore(7, 2);
 
 		int s = b.getScore();
-		assertEquals(30+27+17+9, s);
+		assertEquals(30+27+19+9, s);
 	}
 
 }
