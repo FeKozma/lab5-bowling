@@ -42,6 +42,19 @@ class BowlingTest {
 	}
 	
 	@Test
+	void addScoreSpare2()
+	{
+		Bowling b = new Bowling();
+		b.addScore(9, 1);
+		b.addScore(8, 1);
+		b.addScore(7, 3);
+		b.addScore(5, 2);
+
+		int s = b.getScore();
+		assertEquals(18+17+15+10, s);
+	}
+	
+	@Test
 	void addScoreMultipleStrike()
 	{
 		Bowling b = new Bowling();
