@@ -46,9 +46,9 @@ class BowlingTest {
 	{
 		Bowling b = new Bowling();
 		b.addScore(9, 1);
-		b.addScore(8, 1);
+		b.addScore(8, 2);
 		b.addScore(7, 3);
-		b.addScore(5, 2);
+		b.addScore(5, 5);
 
 		int s = b.getScore();
 		assertEquals(18+17+15+10, s);
