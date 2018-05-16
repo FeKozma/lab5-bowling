@@ -1,17 +1,31 @@
 
 public class Bowling {
 	int score = 0;
-	boolean strike =false;
+	int strike =0;
 	boolean spare = false;
 	public void addScore(int first, int second)
 	{
 		score += first + second;
 		
 		//if previus was a strike
-		if(strike)
+		if(strike > 0)
 		{
 			score += first + second;
-			strike = false;
+			
+
+			
+			if(strike == 2)
+			{
+				score += first;
+				strike = 0;
+			}
+			
+			//if this also is a strike remember that there wher 2 strikes in a row
+			if(first == 10)
+			{
+				strike += 1;
+			}
+
 		}
 		//if previus was a spare
 		else if(spare)
@@ -21,14 +35,19 @@ public class Bowling {
 		}
 		
 		//if this is a strike remember that
-		if(first == 10)
+		if(first == 10 && strike != 2)
 		{
-			strike = true;
+			strike += 1;
 		}
 		//if it was a spare remember that
 		else if(first + second == 10)
 		{
 			spare = true;
+			strike = 0;
+		}
+		else
+		{
+			strike = 0;
 		}
 
 	}
