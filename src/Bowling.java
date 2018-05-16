@@ -14,7 +14,7 @@ public class Bowling {
 			
 
 			
-			if(strike == 2)
+			if(strike >= 2)
 			{
 				score += first;
 				strike = 0;
@@ -23,7 +23,7 @@ public class Bowling {
 			//if this also is a strike remember that there wher 2 strikes in a row
 			if(first == 10)
 			{
-				strike += 1;
+				strike = 1;
 			}
 
 		}
@@ -35,7 +35,7 @@ public class Bowling {
 		}
 		
 		//if this is a strike remember that
-		if(first == 10 && strike != 2)
+		if(first == 10)
 		{
 			strike += 1;
 		}
