@@ -78,5 +78,26 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(30+27+19+9, s);
 	}
+	
+	@Test
+	void addScoreLastSpare()
+	{
+		Bowling b = new Bowling();
+		b.addScore(1, 5);
+		b.addScore(3, 6);
+		b.addScore(7, 2);
+		b.addScore(3, 6);
+		b.addScore(4, 4);
+		b.addScore(5, 3);
+		b.addScore(3, 3);
+		b.addScore(4, 5);
+		b.addScore(8, 1);
+		b.addScore(2, 8);
+		//bonus throw
+		b.addScore(7, 0);
+		
+		int s = b.getScore();
+		assertEquals(90, s);
+	}
 
 }
