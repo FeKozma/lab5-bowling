@@ -2,10 +2,15 @@
 public class Bowling {
 	int score = 0;
 	int strike =0;
+	int round = 0;
 	boolean spare = false;
 	public void addScore(int first, int second)
 	{
+		if(round != 10)
+		{
 		score += first + second;
+		round++;
+		}
 		
 		//if previus was a strike
 		if(strike > 0)
