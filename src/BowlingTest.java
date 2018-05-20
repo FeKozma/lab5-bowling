@@ -120,5 +120,26 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(92, s);
 	}
+	
+	@Test
+	void  bestScore()
+	{
+		Bowling b = new Bowling();
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		b.addScore(10, 0);
+		
+		int s = b.getScore();
+		assertEquals(300, s);
+
+	}
 
 }
