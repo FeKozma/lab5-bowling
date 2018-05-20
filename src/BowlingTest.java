@@ -141,5 +141,25 @@ class BowlingTest {
 		assertEquals(300, s);
 
 	}
+	
+	@Test
+	void realGame()
+	{
+		Bowling b = new Bowling();
+		b.addScore(6, 3);
+		b.addScore(7, 1);
+		b.addScore(8, 2);
+		b.addScore(7, 2);
+		b.addScore(10, 0);
+		b.addScore(6, 2);
+		b.addScore(7, 3);
+		b.addScore(10, 0);
+		b.addScore(8, 0);
+		b.addScore(7, 3);
+		b.addScore(10, 0);
+		
+		int s = b.getScore();
+		assertEquals(135, s);
+	}
 
 }
