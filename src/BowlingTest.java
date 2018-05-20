@@ -99,5 +99,26 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(90, s);
 	}
+	
+	@Test
+	void addScoreStrikeAtLastFrame()
+	{
+		Bowling b = new Bowling();
+		b.addScore(1, 5);
+		b.addScore(3, 6);
+		b.addScore(7, 2);
+		b.addScore(3, 6);
+		b.addScore(4, 4);
+		b.addScore(5, 3);
+		b.addScore(3, 3);
+		b.addScore(4, 5);
+		b.addScore(8, 1);
+		b.addScore(10, 0);
+		//bonus throw
+		b.addScore(7, 2);
+		
+		int s = b.getScore();
+		assertEquals(92, s);
+	}
 
 }
