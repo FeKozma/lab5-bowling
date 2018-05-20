@@ -135,7 +135,7 @@ class BowlingTest {
 		b.addScore(10, 0);
 		b.addScore(10, 0);
 		b.addScore(10, 0);
-		b.addScore(10, 0);
+		b.addScore(10, 10);
 		
 		int s = b.getScore();
 		assertEquals(300, s);
