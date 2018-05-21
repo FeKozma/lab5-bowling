@@ -18,7 +18,15 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(5, s);
 	}
-	
+
+	@Test
+	void getScore1() {
+		Bowling b = new Bowling();
+		b.addScore(0, 0);
+		int s = b.getScore();
+		assertEquals(0, s);
+	}
+
 	@Test
 	void addScoreStrike()
 	{
