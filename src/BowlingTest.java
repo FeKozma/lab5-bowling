@@ -28,6 +28,14 @@ class BowlingTest {
 	}
 
 	@Test
+	void getScore2() {
+		Bowling b = new Bowling();
+		b.addScore(10, 0);
+		int s = b.getScore();
+		assertEquals(10, s);
+	}
+
+	@Test
 	void addScoreStrike()
 	{
 		Bowling b = new Bowling();
