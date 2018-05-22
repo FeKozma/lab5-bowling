@@ -8,7 +8,6 @@ class BowlingTest {
 	void addScore() {
 		Bowling b = new Bowling();
 		b.addScore(2, 2);
-		//fail("Not yet implemented");
 	}
 	
 	@Test
@@ -36,8 +35,7 @@ class BowlingTest {
 	}
 
 	@Test
-	void addScoreStrike()
-	{
+	void addScoreStrike() {
 		Bowling b = new Bowling();
 		b.addScore(10, 0);
 		b.addScore(5, 2);
@@ -47,8 +45,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreSpare()
-	{
+	void addScoreSpare() {
 		Bowling b = new Bowling();
 		b.addScore(9, 1);
 		b.addScore(5, 2);
@@ -58,8 +55,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreSpare2()
-	{
+	void addScoreSpare2() {
 		Bowling b = new Bowling();
 		b.addScore(9, 1);
 		b.addScore(8, 2);
@@ -71,8 +67,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreMultipleStrike()
-	{
+	void addScoreMultipleStrike() {
 		Bowling b = new Bowling();
 		b.addScore(10, 0);
 		b.addScore(10, 0);
@@ -83,8 +78,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreMultipleStrike2()
-	{
+	void addScoreMultipleStrike2() {
 		Bowling b = new Bowling();
 		b.addScore(10, 0);
 		b.addScore(10, 0);
@@ -96,8 +90,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreLastSpare()
-	{
+	void addScoreLastSpare() {
 		Bowling b = new Bowling();
 		b.addScore(1, 5);
 		b.addScore(3, 6);
@@ -109,7 +102,7 @@ class BowlingTest {
 		b.addScore(4, 5);
 		b.addScore(8, 1);
 		b.addScore(2, 8);
-		//bonus throw
+		// Bonus throw.
 		b.addScore(7, 0);
 		
 		int s = b.getScore();
@@ -117,8 +110,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void addScoreStrikeAtLastFrame()
-	{
+	void addScoreStrikeAtLastFrame() {
 		Bowling b = new Bowling();
 		b.addScore(1, 5);
 		b.addScore(3, 6);
@@ -130,7 +122,7 @@ class BowlingTest {
 		b.addScore(4, 5);
 		b.addScore(8, 1);
 		b.addScore(10, 0);
-		//bonus throw
+		// Bonus throw.
 		b.addScore(7, 2);
 		
 		int s = b.getScore();
@@ -138,8 +130,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void  bestScore()
-	{
+	void  bestScore() {
 		Bowling b = new Bowling();
 		b.addScore(10, 0);
 		b.addScore(10, 0);
@@ -159,8 +150,7 @@ class BowlingTest {
 	}
 	
 	@Test
-	void realGame()
-	{
+	void realGame() {
 		Bowling b = new Bowling();
 		b.addScore(6, 3);
 		b.addScore(7, 1);
@@ -177,5 +167,4 @@ class BowlingTest {
 		int s = b.getScore();
 		assertEquals(135, s);
 	}
-
 }
